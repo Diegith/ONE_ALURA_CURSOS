@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__contenido">
+            <div class="container__informaciones">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__parrafo"></p>
+                </div>
+                <div class="chute container__botones">
+                    <input type="number" id="valor1" min="1" max="10" class="container__input" placeholder="valor1">
+                    <input type="number" id="valor2" min="1" max="10" class="container__input" placeholder="valor2">
+                </div>
+                
+                <div class="chute container__botones">
+                    <button onclick="calcularIMC(document.getElementById('valor1').value, document.getElementById('valor2').value);" class="container__boton">IMC</button>                    
+                    <button onclick="calcularFactorial(document.getElementById('valor1').value);" class="container__boton">Factorial</button>
+                    <button onclick="calcularEnDolares(document.getElementById('valor1').value);" class="container__boton">Dolares</button>                    
+                </div>
+                <div class="chute container__botones">
+                    <button onclick="perimetroAreaRectangulo(document.getElementById('valor1').value, document.getElementById('valor2').value);" class="container__boton">P&A:Rectang</button>   
+                    <button onclick="perimetroAreaCirculo(document.getElementById('valor1').value,);" class="container__boton">P&A:Círculo</button>
+                    <button onclick="tablaDeMultiplicar(document.getElementById('valor1').value,);" class="container__boton">TablaMultip</button>
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
+        </div>
+    </div>
+    <script src="../desafios/desafio3.js" defer></script>
+</body>
+
+</html>
