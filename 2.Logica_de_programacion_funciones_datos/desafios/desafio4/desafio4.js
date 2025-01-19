@@ -98,6 +98,7 @@ function sumaListas(lista1, lista2){
     console.log(lista3);
     return lista3;
 }
+
 l1 = [];
 l2 = [];
 sumaListas(generarListaAleatoria(l1), generarListaAleatoria(l2));
