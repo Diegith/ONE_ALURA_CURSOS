@@ -13,14 +13,13 @@ function agregarAmigo() {
 }
 
 function mostrarAmigos() {
-    let listaAmigos = document.getElementById('listaAmigos');
+    const listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = ''; // Limpiar la lista antes de agregar los elementos
-    amigos.forEach(function(amigo) {
+    amigos.forEach(amigo => {
         let li = document.createElement('li');
         li.textContent = amigo;
         listaAmigos.appendChild(li);
-    });
-    
+    });    
 }
 
 function limpiar() {
